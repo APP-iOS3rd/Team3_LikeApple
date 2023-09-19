@@ -3,7 +3,7 @@
 
 ## 👯‍♀️ Team Introduce
 <details><summary>
-백종현(리더) / ISTP 
+🦀 백종현(리더) / ISTP
 </summary>
 
 - [Github](https://github.com/jonghyunBaik)
@@ -13,7 +13,7 @@
 </details>
 
 <details><summary>
-김정환 / INTFJ
+🐯 김정환 / INTFJ
 </summary>
 
 - [Github](https://github.com/Teoler)
@@ -22,7 +22,7 @@
 </details>
 
 <details><summary>
-노주영 / INFP
+🐶 노주영 / INFP
 </summary>
 
 - [Github](https://github.com/JooYoungNoh)
@@ -33,7 +33,7 @@
 
 
 <details><summary>
-이명섭 / INFP
+😻 이명섭 / INFP
 </summary>
 
 - [Github](https://github.com/Seobe95)
@@ -44,7 +44,7 @@
 
 
 <details><summary>
-한수빈 / ENTP
+🐬 한수빈 / ENTP
 </summary>
 
 - [Github](https://github.com/WaterBean)
