@@ -1,3 +1,7 @@
+<div align="center">
+<img width="310" height="270" border:0px src="https://user-images.githubusercontent.com/89888855/268875145-8d4fb1b6-860c-4e88-81d7-bee7fd29a677.png"/>
+</div>
+
 # 안녕하세요. 🍎멋쟁이 사과처럼🍏입니다.
 
 
