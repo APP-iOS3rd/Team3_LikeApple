@@ -26,27 +26,27 @@ class ViewController: UIViewController {
     
     //MARK: 버튼 메소드
     @objc func buttonClick(_ sender: UIButton){
-        print("클릭")
-        
-        
+        self.randomMember.text = "~"
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5){
+            if self.saveArray.count != 0 {
+                self.randomMember.text = "\(self.saveArray.randomElement()!)"
+            } else {
+                self.randomMember.text = "뽑을 인원이 없습니다"
+            }
+        }
     }
     
     @objc func buttonClear(_ sender: UIButton){
-        print("초기화")
         self.saveArray.removeAll()
         self.memberCountLabel.text = "\(self.saveArray.count)명"
         self.nameTextField1.text = ""
-        print("\(self.saveArray.count)명")
     }
     
     @objc func buttonAdd(_ sender: UIButton){
-        print("추가")
         if self.nameTextField1.text != "" {
             self.saveArray.append(self.nameTextField1.text!)
             self.memberCountLabel.text = "\(self.saveArray.count)명"
             self.nameTextField1.text = ""
-            print("\(self.saveArray.count)명")
-            print(self.saveArray)
         }
     }
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     func uiCreate(){
         clickButton.translatesAutoresizingMaskIntoConstraints = false
         clickButton.backgroundColor = UIColor.systemGray5
-        clickButton.setTitle("> 랜덤 뽑기 <", for: .normal)
+        clickButton.setTitle("> 랜덤 뽑기 버튼 <", for: .normal)
         clickButton.setTitleColor(UIColor.black, for: .normal)
         clickButton.alpha = 0.7
         clickButton.layer.cornerRadius = 3
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         //1
         nameTextField1.translatesAutoresizingMaskIntoConstraints = false
         nameTextField1.backgroundColor = UIColor.systemGray5
-        nameTextField1.placeholder = "ex)노주영"
+        nameTextField1.placeholder = " ex) 노주영"
         nameTextField1.alpha = 0.7
         nameTextField1.layer.cornerRadius = 3
         nameTextField1.layer.borderWidth = 2
