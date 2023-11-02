@@ -15,6 +15,7 @@
 		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
 		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
 		557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF2A2AF37AC3005DD225 /* DetailView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +264,7 @@
 				557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */,
 				557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */,
 				557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */,
+				73C768392AF378BE00BE09CB /* QuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
