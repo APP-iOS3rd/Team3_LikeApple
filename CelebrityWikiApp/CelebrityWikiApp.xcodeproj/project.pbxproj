@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */; };
+		557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF002AF36FDB005DD225 /* ContentView.swift */; };
+		557CEF032AF36FDD005DD225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CEF022AF36FDD005DD225 /* Assets.xcassets */; };
+		557CEF062AF36FDD005DD225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */; };
+		557CEF102AF36FDD005DD225 /* CelebrityWikiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF0F2AF36FDD005DD225 /* CelebrityWikiAppTests.swift */; };
+		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
+		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		557CEF0C2AF36FDD005DD225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557CEEF32AF36FDB005DD225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557CEEFA2AF36FDB005DD225;
+			remoteInfo = CelebrityWikiApp;
+		};
+		557CEF162AF36FDD005DD225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557CEEF32AF36FDB005DD225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557CEEFA2AF36FDB005DD225;
+			remoteInfo = CelebrityWikiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		557CEEFB2AF36FDB005DD225 /* CelebrityWikiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelebrityWikiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppApp.swift; sourceTree = "<group>"; };
+		557CEF002AF36FDB005DD225 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		557CEF022AF36FDD005DD225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		557CEF0B2AF36FDD005DD225 /* CelebrityWikiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelebrityWikiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557CEF0F2AF36FDD005DD225 /* CelebrityWikiAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppTests.swift; sourceTree = "<group>"; };
+		557CEF152AF36FDD005DD225 /* CelebrityWikiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelebrityWikiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITests.swift; sourceTree = "<group>"; };
+		557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557CEEF82AF36FDB005DD225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF082AF36FDD005DD225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF122AF36FDD005DD225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557CEEF22AF36FDB005DD225 = {
+			isa = PBXGroup;
+			children = (
+				557CEEFD2AF36FDB005DD225 /* CelebrityWikiApp */,
+				557CEF0E2AF36FDD005DD225 /* CelebrityWikiAppTests */,
+				557CEF182AF36FDD005DD225 /* CelebrityWikiAppUITests */,
+				557CEEFC2AF36FDB005DD225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557CEEFC2AF36FDB005DD225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557CEEFB2AF36FDB005DD225 /* CelebrityWikiApp.app */,
+				557CEF0B2AF36FDD005DD225 /* CelebrityWikiAppTests.xctest */,
+				557CEF152AF36FDD005DD225 /* CelebrityWikiAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557CEEFD2AF36FDB005DD225 /* CelebrityWikiApp */ = {
+			isa = PBXGroup;
+			children = (
+				557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */,
+				557CEF002AF36FDB005DD225 /* ContentView.swift */,
+				557CEF022AF36FDD005DD225 /* Assets.xcassets */,
+				557CEF042AF36FDD005DD225 /* Preview Content */,
+			);
+			path = CelebrityWikiApp;
+			sourceTree = "<group>";
+		};
+		557CEF042AF36FDD005DD225 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		557CEF0E2AF36FDD005DD225 /* CelebrityWikiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				557CEF0F2AF36FDD005DD225 /* CelebrityWikiAppTests.swift */,
+			);
+			path = CelebrityWikiAppTests;
+			sourceTree = "<group>";
+		};
+		557CEF182AF36FDD005DD225 /* CelebrityWikiAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */,
+				557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */,
+			);
+			path = CelebrityWikiAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557CEEFA2AF36FDB005DD225 /* CelebrityWikiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557CEF1F2AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiApp" */;
+			buildPhases = (
+				557CEEF72AF36FDB005DD225 /* Sources */,
+				557CEEF82AF36FDB005DD225 /* Frameworks */,
+				557CEEF92AF36FDB005DD225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CelebrityWikiApp;
+			productName = CelebrityWikiApp;
+			productReference = 557CEEFB2AF36FDB005DD225 /* CelebrityWikiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		557CEF0A2AF36FDD005DD225 /* CelebrityWikiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557CEF222AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiAppTests" */;
+			buildPhases = (
+				557CEF072AF36FDD005DD225 /* Sources */,
+				557CEF082AF36FDD005DD225 /* Frameworks */,
+				557CEF092AF36FDD005DD225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557CEF0D2AF36FDD005DD225 /* PBXTargetDependency */,
+			);
+			name = CelebrityWikiAppTests;
+			productName = CelebrityWikiAppTests;
+			productReference = 557CEF0B2AF36FDD005DD225 /* CelebrityWikiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		557CEF142AF36FDD005DD225 /* CelebrityWikiAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557CEF252AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiAppUITests" */;
+			buildPhases = (
+				557CEF112AF36FDD005DD225 /* Sources */,
+				557CEF122AF36FDD005DD225 /* Frameworks */,
+				557CEF132AF36FDD005DD225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557CEF172AF36FDD005DD225 /* PBXTargetDependency */,
+			);
+			name = CelebrityWikiAppUITests;
+			productName = CelebrityWikiAppUITests;
+			productReference = 557CEF152AF36FDD005DD225 /* CelebrityWikiAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		557CEEF32AF36FDB005DD225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					557CEEFA2AF36FDB005DD225 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					557CEF0A2AF36FDD005DD225 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 557CEEFA2AF36FDB005DD225;
+					};
+					557CEF142AF36FDD005DD225 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 557CEEFA2AF36FDB005DD225;
+					};
+				};
+			};
+			buildConfigurationList = 557CEEF62AF36FDB005DD225 /* Build configuration list for PBXProject "CelebrityWikiApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557CEEF22AF36FDB005DD225;
+			productRefGroup = 557CEEFC2AF36FDB005DD225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557CEEFA2AF36FDB005DD225 /* CelebrityWikiApp */,
+				557CEF0A2AF36FDD005DD225 /* CelebrityWikiAppTests */,
+				557CEF142AF36FDD005DD225 /* CelebrityWikiAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557CEEF92AF36FDB005DD225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557CEF062AF36FDD005DD225 /* Preview Assets.xcassets in Resources */,
+				557CEF032AF36FDD005DD225 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF092AF36FDD005DD225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF132AF36FDD005DD225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		557CEEF72AF36FDB005DD225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */,
+				557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF072AF36FDD005DD225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557CEF102AF36FDD005DD225 /* CelebrityWikiAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557CEF112AF36FDD005DD225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */,
+				557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		557CEF0D2AF36FDD005DD225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557CEEFA2AF36FDB005DD225 /* CelebrityWikiApp */;
+			targetProxy = 557CEF0C2AF36FDD005DD225 /* PBXContainerItemProxy */;
+		};
+		557CEF172AF36FDD005DD225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557CEEFA2AF36FDB005DD225 /* CelebrityWikiApp */;
+			targetProxy = 557CEF162AF36FDD005DD225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		557CEF1D2AF36FDD005DD225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		557CEF1E2AF36FDD005DD225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		557CEF202AF36FDD005DD225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CelebrityWikiApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		557CEF212AF36FDD005DD225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CelebrityWikiApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		557CEF232AF36FDD005DD225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelebrityWikiApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CelebrityWikiApp";
+			};
+			name = Debug;
+		};
+		557CEF242AF36FDD005DD225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelebrityWikiApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CelebrityWikiApp";
+			};
+			name = Release;
+		};
+		557CEF262AF36FDD005DD225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelebrityWikiApp;
+			};
+			name = Debug;
+		};
+		557CEF272AF36FDD005DD225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ko.co.seobe.CelebrityWikiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelebrityWikiApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		557CEEF62AF36FDB005DD225 /* Build configuration list for PBXProject "CelebrityWikiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557CEF1D2AF36FDD005DD225 /* Debug */,
+				557CEF1E2AF36FDD005DD225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557CEF1F2AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557CEF202AF36FDD005DD225 /* Debug */,
+				557CEF212AF36FDD005DD225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557CEF222AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557CEF232AF36FDD005DD225 /* Debug */,
+				557CEF242AF36FDD005DD225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557CEF252AF36FDD005DD225 /* Build configuration list for PBXNativeTarget "CelebrityWikiAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557CEF262AF36FDD005DD225 /* Debug */,
+				557CEF272AF36FDD005DD225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 557CEEF32AF36FDB005DD225 /* Project object */;
+}
