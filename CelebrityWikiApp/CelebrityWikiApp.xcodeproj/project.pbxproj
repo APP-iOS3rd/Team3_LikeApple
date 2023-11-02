@@ -15,6 +15,7 @@
 		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
 		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
 		557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF2A2AF37AC3005DD225 /* DetailView.swift */; };
+		73189F802AF3C18100986524 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73189F7F2AF3C18100986524 /* ConnectionView.swift */; };
 		73A924302AF3A46C00E8C478 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9242F2AF3A46C00E8C478 /* QuizView.swift */; };
 		73A924322AF3A4C200E8C478 /* AddNewCeleb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITests.swift; sourceTree = "<group>"; };
 		557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		557CEF2A2AF37AC3005DD225 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		73189F7F2AF3C18100986524 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 		73A9242F2AF3A46C00E8C478 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCeleb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */,
 				557CEF002AF36FDB005DD225 /* ContentView.swift */,
 				557CEF2A2AF37AC3005DD225 /* DetailView.swift */,
+				73189F7F2AF3C18100986524 /* ConnectionView.swift */,
 				73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */,
 				73A9242F2AF3A46C00E8C478 /* QuizView.swift */,
 				557CEF022AF36FDD005DD225 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 				557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */,
 				73A924302AF3A46C00E8C478 /* QuizView.swift in Sources */,
 				557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */,
+				73189F802AF3C18100986524 /* ConnectionView.swift in Sources */,
 				557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
