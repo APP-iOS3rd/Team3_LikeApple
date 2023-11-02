@@ -15,13 +15,13 @@ struct ConnectionView: View {
             TabView() {
                 ContentView(celebrityVM: celebrityVM)
                     .tabItem {
-                        Image(systemName: "circle.fill")
+                        Image(systemName: "list.clipboard.fill")
                         Text("Celebrity List")
                     }
                 
                 QuizView(celebrityVM: celebrityVM, blur: Array(repeating: 10, count: celebrityVM.celebrityList.count), answer: Array(repeating: "", count: celebrityVM.celebrityList.count), resultText: Array(repeating: "", count: celebrityVM.celebrityList.count))
                     .tabItem {
-                        Image(systemName: "square.fill")
+                        Image(systemName: "playstation.logo")
                         Text("Quiz")
                     }
             }
