@@ -23,9 +23,7 @@ struct ContentView: View {
       List {
         Section(content: {
           ForEach(result) { i in
-            NavigationLink(destination: DetailView(
-              name: i.name, description: i.description, isGender: i.isGender, imageName: i.imageName, link: i.link
-            )) {
+            NavigationLink(destination: DetailView(celebrityInfo: i)) {
               HStack {
                 AsyncImage(url: URL(string: i.imageName)!) {
                   image in
