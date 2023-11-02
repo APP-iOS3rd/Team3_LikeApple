@@ -10,7 +10,8 @@ struct ContentView: View {
     
     @StateObject var celebrityVM: CelebrityViewModel
     
-    @State private var searchKeyword = ""
+    @State private var isShowModal: Bool = false
+    @State private var searchKeyword: String = ""
     
     var result: [CelebrityModel] {
         if searchKeyword.isEmpty { return celebrityVM.celebrityList } else {
@@ -38,7 +39,7 @@ struct ContentView: View {
                                 
                                 VStack {
                                     HStack {
-                                        Image(systemName: i.isGender ? "person" : "person.fill")
+                                        Image(systemName: "person.fill")
                                             .resizable()
                                             .frame(width: 20, height: 20)
                                         
@@ -51,7 +52,8 @@ struct ContentView: View {
                                     
                                     HStack {
                                         Text("\(i.description)")
-                                            .modifier(StandardCustomFontText())
+                                            .font(.custom("NotoSansKR-Regular", size: 15))
+                                            .foregroundStyle(.black)
                                             .lineLimit(1)
                                         Spacer()
                                     }
@@ -66,7 +68,19 @@ struct ContentView: View {
                         .bold()
                         .padding(.vertical)
                 })
-            }.searchable(text: $searchKeyword, placement: .navigationBarDrawer(displayMode: .automatic))
+            }
+            .toolbar(content: {
+                Button(action: {isShowModal = true}, label: {
+                    Text("Add")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                })
+                .padding(.trailing, 20)
+                .sheet(isPresented: $isShowModal) {
+                    AddNewCeleb(celebrityVM: celebrityVM)
+                }
+            })
+            .searchable(text: $searchKeyword, placement: .navigationBarDrawer(displayMode: .always))
         }
     }
 }

@@ -50,10 +50,9 @@ struct DetailView: View {
                         }
                         Spacer()
                     }
-                    
-                    InformationRow(head: "이름", content: celebrityInfo.name)
-                    InformationRow(head: "간단설명", content: celebrityInfo.description)
-                    InformationRow(head: "상세정보", link: celebrityInfo.link)
+                    InformationRow(head: "Name", content: celebrityInfo.name)
+                    InformationRow(head: "description", content: celebrityInfo.description)
+                    InformationRow(head: "link", link: celebrityInfo.link)
                     
                 } header: {
                     Text("CELEBRITY DETAIL")
@@ -75,18 +74,17 @@ struct InformationRow: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            if head == "상세정보", let url = link {
-                Link(head, destination:URL(string: url)!)
+            if head == "link", let url = link {
+                Link("Link", destination:URL(string: url)!)
             } else {
                 Text(head)
                     .font(.headline)
-                    .padding(.bottom, 5)
-                
+                    .padding(.bottom)
                 Text(content)
                     .font(.body)
             }
         }
-        .padding(.vertical)
+        .padding()
     }
 }
 
