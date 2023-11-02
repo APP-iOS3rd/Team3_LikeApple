@@ -15,6 +15,7 @@
 		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
 		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
 		73C768392AF378BE00BE09CB /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C768382AF378BE00BE09CB /* QuizView.swift */; };
+		73C7683B2AF37C4000BE09CB /* QuizListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7683A2AF37C4000BE09CB /* QuizListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITests.swift; sourceTree = "<group>"; };
 		557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73C768382AF378BE00BE09CB /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		73C7683A2AF37C4000BE09CB /* QuizListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */,
 				557CEF002AF36FDB005DD225 /* ContentView.swift */,
 				73C768382AF378BE00BE09CB /* QuizView.swift */,
+				73C7683A2AF37C4000BE09CB /* QuizListView.swift */,
 				557CEF022AF36FDD005DD225 /* Assets.xcassets */,
 				557CEF042AF36FDD005DD225 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */,
+				73C7683B2AF37C4000BE09CB /* QuizListView.swift in Sources */,
 				557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */,
 				73C768392AF378BE00BE09CB /* QuizView.swift in Sources */,
 			);
