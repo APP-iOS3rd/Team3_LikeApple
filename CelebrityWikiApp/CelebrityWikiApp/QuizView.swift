@@ -13,18 +13,11 @@ struct QuizView: View {
     @State private var isAnimation = false
     @State private var quizText: String = "Quiz"
     
-    //TextField 변수
-    @State private var answerOne: String = ""
-    @State private var answerTwo: String = ""
-    @State private var answerThree: String = ""
-    @State private var answerFour: String = ""
-    @State private var answerFive: String = ""
+    //Image 흐림 정도
+    @State private var blur: [Int] =  Array(repeating: 10, count: 5)
     
-    @State private var isEditingOne: Bool = false
-    @State private var isEditingTwo: Bool = false
-    @State private var isEditingThree: Bool = false
-    @State private var isEditingFour: Bool = false
-    @State private var isEditingFive: Bool = false
+    //TextField 변수
+    @State private var answer: [String] = Array(repeating: "", count: 5)
     
     var body: some View {
         VStack {
@@ -45,9 +38,10 @@ struct QuizView: View {
                                     .resizable()
                                     .frame(width: 320, height: 320)
                                     .aspectRatio(contentMode: .fit)
+                                    .blur(radius: CGFloat(blur[i]))
                                     .padding()
                                 
-                                TextField("\(i+1)번 답", text: chooseAnswer(i))
+                                TextField("\(i+1)번 답", text: $answer[i])
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                     .border(.gray, width: 3)
                                     .cornerRadius(5)
@@ -55,7 +49,7 @@ struct QuizView: View {
                                     .padding(.horizontal)
                                 
                                 HStack {
-                                    Button(action: {}, label: {
+                                    Button(action: { blur[i] -= 2 }, label: {
                                         Text("Hint")
                                             .modifier(StandardCustomFontText())
                                     })
@@ -67,7 +61,7 @@ struct QuizView: View {
                                     Spacer()
                                     
                                     Button(action: {}, label: {
-                                        Text("Save")
+                                        Text("Result")
                                             .modifier(StandardCustomFontText())
                                     })
                                     .frame(width: 100, height: 50)
@@ -116,15 +110,6 @@ struct QuizView: View {
         }
     }
     
-    func chooseAnswer(_ i: Int) -> Binding<String>{
-        switch i {
-        case 0:     return $answerOne
-        case 1:     return $answerTwo
-        case 2:     return $answerThree
-        case 3:     return $answerFour
-        default:    return $answerFive
-        }
-    }
 }
 
 #Preview {
