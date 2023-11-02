@@ -127,15 +127,6 @@ struct QuizView: View {
     }
 }
 
-struct StandardCustomFontText: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .font(.largeTitle)
-            .foregroundStyle(.black)
-            .bold()
-    }
-}
-
 #Preview {
     QuizView()
 }

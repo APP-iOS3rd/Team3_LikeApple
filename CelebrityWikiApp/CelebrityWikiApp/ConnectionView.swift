@@ -22,7 +22,6 @@ struct ConnectionView: View {
                     .tabItem {
                         Image(systemName: "square.fill")
                         Text("AppStorage")
-                            .modifier(StandardCustomFontText()) 
                     }
             }
         }

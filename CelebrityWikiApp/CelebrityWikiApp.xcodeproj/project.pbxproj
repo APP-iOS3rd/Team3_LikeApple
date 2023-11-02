@@ -18,6 +18,7 @@
 		73189F802AF3C18100986524 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73189F7F2AF3C18100986524 /* ConnectionView.swift */; };
 		73189F832AF3C30200986524 /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73189F822AF3C30200986524 /* NotoSansKR-Bold.ttf */; };
 		73189F852AF3C31300986524 /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73189F842AF3C31300986524 /* NotoSansKR-Regular.ttf */; };
+		73189F892AF3C3C500986524 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73189F882AF3C3C500986524 /* CustomModifier.swift */; };
 		73A924302AF3A46C00E8C478 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9242F2AF3A46C00E8C478 /* QuizView.swift */; };
 		73A924322AF3A4C200E8C478 /* AddNewCeleb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		73189F822AF3C30200986524 /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
 		73189F842AF3C31300986524 /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
 		73189F862AF3C32500986524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		73189F882AF3C3C500986524 /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		73A9242F2AF3A46C00E8C478 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCeleb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				73A9242F2AF3A46C00E8C478 /* QuizView.swift */,
 				557CEF022AF36FDD005DD225 /* Assets.xcassets */,
 				73189F812AF3C2F000986524 /* Font */,
+				73189F872AF3C39500986524 /* CustomViewModifier */,
 				557CEF042AF36FDD005DD225 /* Preview Content */,
 			);
 			path = CelebrityWikiApp;
@@ -153,6 +156,14 @@
 				73189F842AF3C31300986524 /* NotoSansKR-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		73189F872AF3C39500986524 /* CustomViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				73189F882AF3C3C500986524 /* CustomModifier.swift */,
+			);
+			path = CustomViewModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73A924322AF3A4C200E8C478 /* AddNewCeleb.swift in Sources */,
+				73189F892AF3C3C500986524 /* CustomModifier.swift in Sources */,
 				557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */,
 				73A924302AF3A46C00E8C478 /* QuizView.swift in Sources */,
 				557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */,
