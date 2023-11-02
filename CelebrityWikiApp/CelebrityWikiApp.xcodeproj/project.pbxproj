@@ -15,7 +15,6 @@
 		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
 		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
 		557CEF2B2AF37AC3005DD225 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF2A2AF37AC3005DD225 /* DetailView.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +46,7 @@
 		557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITests.swift; sourceTree = "<group>"; };
 		557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		557CEF2A2AF37AC3005DD225 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +101,7 @@
 				557CEF002AF36FDB005DD225 /* ContentView.swift */,
 				557CEF2A2AF37AC3005DD225 /* DetailView.swift */,
 				557CEF022AF36FDD005DD225 /* Assets.xcassets */,
+				55B339252AF379A100DBC985 /* AddNewCeleb.swift */,
 				557CEF042AF36FDD005DD225 /* Preview Content */,
 			);
 			path = CelebrityWikiApp;
