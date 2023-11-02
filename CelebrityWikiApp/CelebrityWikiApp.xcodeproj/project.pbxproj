@@ -10,7 +10,6 @@
 		557CEEFF2AF36FDB005DD225 /* CelebrityWikiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */; };
 		557CEF012AF36FDB005DD225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF002AF36FDB005DD225 /* ContentView.swift */; };
 		557CEF032AF36FDD005DD225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CEF022AF36FDD005DD225 /* Assets.xcassets */; };
-		557CEF062AF36FDD005DD225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */; };
 		557CEF102AF36FDD005DD225 /* CelebrityWikiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF0F2AF36FDD005DD225 /* CelebrityWikiAppTests.swift */; };
 		557CEF1A2AF36FDD005DD225 /* CelebrityWikiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF192AF36FDD005DD225 /* CelebrityWikiAppUITests.swift */; };
 		557CEF1C2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CEF1B2AF36FDD005DD225 /* CelebrityWikiAppUITestsLaunchTests.swift */; };
@@ -19,6 +18,7 @@
 		73189F832AF3C30200986524 /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73189F822AF3C30200986524 /* NotoSansKR-Bold.ttf */; };
 		73189F852AF3C31300986524 /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73189F842AF3C31300986524 /* NotoSansKR-Regular.ttf */; };
 		73189F892AF3C3C500986524 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73189F882AF3C3C500986524 /* CustomModifier.swift */; };
+		738401D62AF3C6470068F930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738401D52AF3C6470068F930 /* Preview Assets.xcassets */; };
 		73A924302AF3A46C00E8C478 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9242F2AF3A46C00E8C478 /* QuizView.swift */; };
 		73A924322AF3A4C200E8C478 /* AddNewCeleb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,6 @@
 		557CEEFE2AF36FDB005DD225 /* CelebrityWikiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppApp.swift; sourceTree = "<group>"; };
 		557CEF002AF36FDB005DD225 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		557CEF022AF36FDD005DD225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		557CEF0B2AF36FDD005DD225 /* CelebrityWikiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelebrityWikiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557CEF0F2AF36FDD005DD225 /* CelebrityWikiAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityWikiAppTests.swift; sourceTree = "<group>"; };
 		557CEF152AF36FDD005DD225 /* CelebrityWikiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelebrityWikiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,7 @@
 		73189F842AF3C31300986524 /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
 		73189F862AF3C32500986524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		73189F882AF3C3C500986524 /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		738401D52AF3C6470068F930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73A9242F2AF3A46C00E8C478 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		73A924312AF3A4C200E8C478 /* AddNewCeleb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCeleb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +127,7 @@
 		557CEF042AF36FDD005DD225 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				557CEF052AF36FDD005DD225 /* Preview Assets.xcassets */,
+				738401D52AF3C6470068F930 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -270,8 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557CEF062AF36FDD005DD225 /* Preview Assets.xcassets in Resources */,
 				73189F832AF3C30200986524 /* NotoSansKR-Bold.ttf in Resources */,
+				738401D62AF3C6470068F930 /* Preview Assets.xcassets in Resources */,
 				557CEF032AF36FDD005DD225 /* Assets.xcassets in Resources */,
 				73189F852AF3C31300986524 /* NotoSansKR-Regular.ttf in Resources */,
 			);
