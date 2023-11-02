@@ -9,7 +9,25 @@ import SwiftUI
 
 struct ConnectionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TabView() {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "circle.fill")
+                        Text("ScenceStorage")
+                    }
+                    
+                    
+                QuizView()
+                    .tabItem {
+                        Image(systemName: "square.fill")
+                        Text("AppStorage")
+                            .modifier(StandardCustomFontText()) 
+                    }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(uiColor: UIColor.systemGray4))
     }
 }
 
