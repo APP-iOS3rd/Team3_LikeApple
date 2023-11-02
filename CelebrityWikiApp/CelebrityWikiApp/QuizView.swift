@@ -9,15 +9,18 @@ import SwiftUI
 
 struct QuizView: View {
     
+    @StateObject var celebrityVM: CelebrityViewModel
+    
     @State private var changeText: String = "Start"
     @State private var isAnimation = false
     @State private var quizText: String = "Quiz"
     
     //Image 흐림 정도
-    @State private var blur: [Int] =  Array(repeating: 10, count: 5)
-    
+    @State var blur: [Int]
     //TextField 변수
-    @State private var answer: [String] = Array(repeating: "", count: 5)
+    @State var answer: [String]
+    //결과 변수
+    @State var resultText: [String]
     
     var body: some View {
         VStack {
@@ -25,23 +28,28 @@ struct QuizView: View {
             ZStack {
                 ScrollView(.horizontal, content: {
                     HStack {
-                        ForEach (0..<5) { i in
+                        ForEach ($celebrityVM.celebrityList) { (i: Binding<CelebrityModel>) in
                             VStack {
-                                Text("문제 \(i+1): " + "yuri".shuffled().map{String($0)}.joined())
+                                Text("문제 \(i.wrappedValue.index+1)")
                                     .padding()
                                     .modifier(StandardCustomFontText())
                                     .multilineTextAlignment(.center)
                                     .background(Color(uiColor: UIColor.systemGray4))
                                     .cornerRadius(10)
                                 
-                                Image("cute")
-                                    .resizable()
-                                    .frame(width: 320, height: 320)
-                                    .aspectRatio(contentMode: .fit)
-                                    .blur(radius: CGFloat(blur[i]))
-                                    .padding()
+                                AsyncImage(url: URL(string: i.wrappedValue.imageName)!) {
+                                     image in
+                                     image
+                                         .resizable()
+                                         .frame(width: 320, height: 320)
+                                         .aspectRatio(contentMode: .fit)
+                                         .blur(radius: CGFloat(blur[i.wrappedValue.index]))
+                                         .padding()
+                                 } placeholder: {
+                                     ProgressView()
+                                 }
                                 
-                                TextField("\(i+1)번 답", text: $answer[i])
+                                TextField("\(i.wrappedValue.index+1)번 답", text: $answer[i.wrappedValue.index])
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                     .border(.gray, width: 3)
                                     .cornerRadius(5)
@@ -49,7 +57,7 @@ struct QuizView: View {
                                     .padding(.horizontal)
                                 
                                 HStack {
-                                    Button(action: { blur[i] -= 2 }, label: {
+                                    Button(action: { blur[i.wrappedValue.index] -= 2 }, label: {
                                         Text("Hint")
                                             .modifier(StandardCustomFontText())
                                     })
@@ -59,8 +67,18 @@ struct QuizView: View {
                                     .padding(.vertical, 20)
                                     
                                     Spacer()
+                                    Text(resultText[i.wrappedValue.index])
+                                        .modifier(StandardCustomFontText())
+                                        .bold()
                                     
-                                    Button(action: {}, label: {
+                                    Spacer()
+                                    Button(action: {
+                                        if answer[i.wrappedValue.index] == i.wrappedValue.name {
+                                            resultText[i.wrappedValue.index] = "O"
+                                        } else {
+                                            resultText[i.wrappedValue.index] = "X"
+                                        }
+                                    }, label: {
                                         Text("Result")
                                             .modifier(StandardCustomFontText())
                                     })
@@ -109,9 +127,4 @@ struct QuizView: View {
             changeText = "Start"
         }
     }
-    
-}
-
-#Preview {
-    QuizView()
 }

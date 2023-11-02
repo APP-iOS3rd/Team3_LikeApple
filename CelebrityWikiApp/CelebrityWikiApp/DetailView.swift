@@ -7,82 +7,86 @@
 
 import SwiftUI
 
-struct CelebrityData: Codable, Identifiable {
-  var id: String
-  var name: String
-  var description: String
-  var imageName: String
-  var detailLink: String
-}
-
 struct DetailView: View {
-  @State private var isImageTapped = false
-  
-  var name: String
-  var description: String
-  var isGender: Bool
-  var imageName: String
-  var link: String
-  
-  var body: some View {
-    Form {
-      Section {
-        HStack {
-          Spacer()
-          ZStack {
-            AsyncImage(url: URL(string: imageName)!) {
-              image in
-              image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(12.0)
-                .frame(width: isImageTapped ? UIScreen.main.bounds.width : 200)
-            } placeholder: {
-              ProgressView()
+    @Environment(\.dismiss) private var dismiss
+    
+    @State private var isImageTapped = false
+    
+    var celebrityInfo: CelebrityModel
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Button(action: {dismiss()}, label: {
+                    Text("< Back")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                })
+                Spacer()
+                
             }
-            .onTapGesture {
-              withAnimation(.bouncy) {
-                isImageTapped.toggle()
-              }
+            .padding(.horizontal, 20)
+            
+            Form {
+                Section {
+                    HStack {
+                        Spacer()
+                        ZStack {
+                            AsyncImage(url: URL(string: celebrityInfo.imageName)!) {
+                                image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .cornerRadius(12.0)
+                                    .frame(width: isImageTapped ? UIScreen.main.bounds.width : 200)
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .onTapGesture {
+                                withAnimation(.bouncy) {
+                                    isImageTapped.toggle()
+                                }
+                            }
+                        }
+                        Spacer()
+                    }
+                    InformationRow(head: "Name", content: celebrityInfo.name)
+                    InformationRow(head: "description", content: celebrityInfo.description)
+                    InformationRow(head: "link", link: celebrityInfo.link)
+                    
+                } header: {
+                    Text("CELEBRITY DETAIL")
+                        .modifier(StandardCustomFontText())
+                        .bold()
+                        .padding(.vertical)
+                }
             }
-          }
-          Spacer()
         }
-        
-        InformationRow(head: "이름", content: name)
-        InformationRow(head: "간단설명", content: description)
-        InformationRow(head: "상세정보", link: link)
-        
-      } header: {
-        Text("CELEBRITY DETAIL")
-      }
+        .navigationBarBackButtonHidden()
+        .padding(.top, 20)
     }
-  }
 }
 
 struct InformationRow: View {
-  var head: String
-  var content: String = ""
-  var link: String? = nil
-  
-  var body: some View {
-    VStack(alignment: .leading){
-      if head == "상세정보", let url = link {
-        Link(head, destination:URL(string: url)!)
-      } else {
-        Text(head)
-          .font(.headline)
-          .padding(.bottom, 5)
-        
-        Text(content)
-          .font(.body)
-      }
+    var head: String
+    var content: String = ""
+    var link: String? = nil
+    
+    var body: some View {
+        VStack(alignment: .leading){
+            if head == "link", let url = link {
+                Link("Link", destination:URL(string: url)!)
+            } else {
+                Text(head)
+                    .font(.headline)
+                    .padding(.bottom)
+                Text(content)
+                    .font(.body)
+            }
+        }
+        .padding()
     }
-  }
 }
 
-#Preview {
-  DetailView(name: "김세정", description: "연예인", isGender: false, imageName: "https://i.namu.wiki/i/jRkpsWUzbWhu9-SjO1JbAVxkf0PIQYEUFIFXPapX0hDmW0slu6eu8SDVnM8YuDTI-KB-01gA3mSpc5t7oiWreY6TuEuC-nVtYRlsUxUBP2juTWyjwt7FaWg7hnIDiJRyIuFTSq62PJibGM4vtogiMA.webp", link: "https://namu.wiki/w/%EA%B9%80%EC%84%B8%EC%A0%95")
-}
 
 
