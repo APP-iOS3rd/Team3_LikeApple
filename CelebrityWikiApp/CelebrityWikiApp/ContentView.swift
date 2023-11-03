@@ -62,6 +62,14 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .onDelete(perform: { indexSet in
+                        celebrityVM.quizList.remove(atOffsets: indexSet)
+                        celebrityVM.celebrityList.remove(atOffsets: indexSet)
+                    })
+                    .onMove(perform: { indices, newOffset in
+                        celebrityVM.quizList.move(fromOffsets: indices, toOffset: newOffset)
+                        celebrityVM.celebrityList.move(fromOffsets: indices, toOffset: newOffset)
+                    })
                 }, header: {
                     Text("Celebrity List")
                         .modifier(StandardCustomFontText())
