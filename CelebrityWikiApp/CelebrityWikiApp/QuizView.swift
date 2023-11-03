@@ -14,13 +14,7 @@ struct QuizView: View {
     @State private var changeText: String = "Start"
     @State private var isAnimation = false
     @State private var quizText: String = "Quiz"
-    
-    //Image 흐림 정도
-    @State var blur: [Int]
-    //TextField 변수
-    @State var answer: [String]
-    //결과 변수
-    @State var resultText: [String]
+    @State private var quizAnswerColor: Color = .red
     
     var body: some View {
         VStack {
@@ -41,15 +35,15 @@ struct QuizView: View {
                                      image in
                                      image
                                          .resizable()
-                                         .frame(width: 320, height: 320)
+                                         .frame(width: 300, height: 300)
                                          .aspectRatio(contentMode: .fit)
-                                         .blur(radius: CGFloat(blur[i.wrappedValue.index]))
+                                         .blur(radius: CGFloat(celebrityVM.quizList[i.wrappedValue.index].blur))
                                          .padding()
                                  } placeholder: {
                                      ProgressView()
                                  }
                                 
-                                TextField("\(i.wrappedValue.index+1)번 답", text: $answer[i.wrappedValue.index])
+                                TextField("\(i.wrappedValue.index+1)번 답", text: $celebrityVM.quizList[i.wrappedValue.index].answer)
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                     .border(.gray, width: 3)
                                     .cornerRadius(5)
@@ -57,7 +51,7 @@ struct QuizView: View {
                                     .padding(.horizontal)
                                 
                                 HStack {
-                                    Button(action: { blur[i.wrappedValue.index] -= 2 }, label: {
+                                    Button(action: { celebrityVM.quizList[i.wrappedValue.index].blur -= 2 }, label: {
                                         Text("Hint")
                                             .modifier(StandardCustomFontText())
                                     })
@@ -67,16 +61,19 @@ struct QuizView: View {
                                     .padding(.vertical, 20)
                                     
                                     Spacer()
-                                    Text(resultText[i.wrappedValue.index])
-                                        .modifier(StandardCustomFontText())
+                                    Text(celebrityVM.quizList[i.wrappedValue.index].resultText)
+                                        .font(.custom("NotoSansKR-Bold", size: 30))
+                                        .foregroundStyle(quizAnswerColor)
                                         .bold()
                                     
                                     Spacer()
                                     Button(action: {
-                                        if answer[i.wrappedValue.index] == i.wrappedValue.name {
-                                            resultText[i.wrappedValue.index] = "O"
+                                        if celebrityVM.quizList[i.wrappedValue.index].answer == i.wrappedValue.name {
+                                            quizAnswerColor = .blue
+                                            celebrityVM.quizList[i.wrappedValue.index].resultText = "O"
                                         } else {
-                                            resultText[i.wrappedValue.index] = "X"
+                                            quizAnswerColor = .red
+                                            celebrityVM.quizList[i.wrappedValue.index].resultText = "X"
                                         }
                                     }, label: {
                                         Text("Result")

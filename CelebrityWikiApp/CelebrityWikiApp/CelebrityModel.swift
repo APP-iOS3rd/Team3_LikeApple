@@ -23,3 +23,16 @@ struct CelebrityModel: Identifiable, Hashable {
         self.link = link
     }
 }
+
+struct QuizModel: Hashable {
+    var id = UUID()
+    var blur: Int = 0
+    var answer: String = ""
+    var resultText: String = ""
+    
+    init(blur: Int, answer: String, resultText: String) {
+        self.blur = blur
+        self.answer = answer
+        self.resultText = resultText
+    }
+}
