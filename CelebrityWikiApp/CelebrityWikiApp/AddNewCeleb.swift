@@ -71,6 +71,8 @@ struct AddNewCeleb: View {
     
     func addNewCeleb(){
         if name != "" && description != "" && imageName != "" && link != "" {
+            celebrityVM.quizList.append(QuizModel(blur: 10, answer: "", resultText: ""))
+            
             celebrityVM.celebrityList.append(CelebrityModel(name: name, description: description, imageName: imageName, index: celebrityVM.celebrityList.count, link: link))
             dismiss()
         } else {

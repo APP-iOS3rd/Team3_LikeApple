@@ -9,6 +9,7 @@ import Foundation
 
 class CelebrityViewModel: ObservableObject {
     @Published var celebrityList: [CelebrityModel] = []
+    @Published var quizList: [QuizModel] = []
     
     //Json 파싱
     func loadJson<T: Decodable>(_ filename: String) -> T {
