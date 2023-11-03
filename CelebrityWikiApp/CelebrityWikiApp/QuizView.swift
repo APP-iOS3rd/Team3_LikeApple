@@ -35,7 +35,7 @@ struct QuizView: View {
                                      image in
                                      image
                                          .resizable()
-                                         .frame(width: 320, height: 320)
+                                         .frame(width: 300, height: 300)
                                          .aspectRatio(contentMode: .fit)
                                          .blur(radius: CGFloat(celebrityVM.quizList[i.wrappedValue.index].blur))
                                          .padding()
